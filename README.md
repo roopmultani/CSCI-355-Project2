@@ -1,5 +1,5 @@
 # CS355 Project 2
-##By: Jacob Brown, Rupinder kaur, Diyor Zoirov
+## By: Jacob Brown, Rupinder kaur, Diyor Zoirov
 
 There are a total of five pages. The first page is the main page which shows the whole
 content of the website with the attached links to other pages which include types of AIR sold, a gallery of AIR options, and a contact section.
