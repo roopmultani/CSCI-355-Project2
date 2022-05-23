@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+   <meta charset="UTF-8">
+   <title>ORDER FORM</title>
+   <body>
+      <header>
+         <h1>ORDER</h1>
+         <nav>
+             <!-- Section links -->
+      <!--Links to all of the page options that can be naviagted through-->
+            <a class="page1" href="Page1.html"> Home </a>
+            <a class="page3" href="Page3.html"> About </a>
+            <a class="page4" href="Page4.html"> Questions </a>
+            <a class="page5" href="Page5.html"> Sign Up For Updates </a>
+            <head>
+                <link rel="stylesheet" href="page2Css.css">
+            </head>
+         </nav>
+      </header>
+      <main>
+    </head>
+    <body>
+    <!--This establishes the order form. it links to another file called action.html
+      and performs the action. The action links it to credit card auth page - on submit needs to move to creditcardhtml page-->
+    <form action="action.html" target="_blank" method="POST">
+    <form class="myForm" method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+    <!-- Lables which denoted what information can be placed-->
+    <p>
+    <label>Name
+    <input type="text" name="customer_name" required>
+    </label>
+    </p>
+
+    <p>
+    <label>Email
+    <input type="email" name="email_address">
+    </label>
+    </p>
+
+    <p>
+    <label>Select Your Air
+    <select id="pickup_place" name="pickup_place">
+    <option value="" selected="selected">Select One</option>
+    <option value="AIR1" >AIR1</option>
+    <option value="AIR2" >AIR2</option>
+    <option value="AIR3" >AIR3</option>
+    </select>
+    </label>
+    </p>
+
+
+    <p><button>Submit</button></p>
+
+    </form>
+</form>
+
+    </body>
+    </html>
+
+      <footer>
+         <p>
+            &copy; 2022 AIR
+         </p>
+      </footer>
+
+   </body>
+</html>

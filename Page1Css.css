@@ -1,0 +1,46 @@
+
+body{
+   max-width:1000px;
+   padding:1em;
+   font-family:Helvetica,Arial, Georgia, Times, 'Times New Roman', serif;
+   background-image: url("bg1.jpg");
+}
+
+div,section,main,aside,header,footer{
+  border:2px groove rgb(29, 22, 22);
+  padding:.5em;
+  margin-bottom:1em;
+}
+
+.center {
+  text-align: center;
+  border: 3px solid green;
+}
+
+.p{
+    border-radius: 4px;
+  }
+
+.p {
+    border-radius: 50%;
+  }
+
+a.page2:link {color:#ff0000; background-color: orange; font-size: 18px; word-spacing: 10px;}
+a.page2:visited {color:white; background-color: orange;}
+a.page2:hover {background:#A6BABA;}
+
+a.contact:link {color:#ff0000; background-color: orange; font-size: 18px; word-spacing: 10px;}
+a.contact:visited {color:white; background-color: orange;}
+a.contact:hover {background:#A6BABA;}
+
+a.page3:link {color:#ff0000; background-color: orange; font-size: 18px; word-spacing: 10px;}
+a.page3:visited {color:white; background-color: orange;}
+a.page3:hover {background:#A6BABA;}
+
+a.page4:link {color:#ff0000; background-color: orange; font-size: 18px; word-spacing: 10px;}
+a.page4:visited {color:white; background-color: orange;}
+a.page4:hover {background:#A6BABA;}
+
+a.page5:link {color:#ff0000; background-color: orange; font-size: 18px;}
+a.page5:visited {color:white; background-color: orange;}
+a.page5:hover {background:#A6BABA;}

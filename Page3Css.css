@@ -1,0 +1,50 @@
+
+body{
+  max-width:1000px;padding:1em;font-family:Georgia,Arial,sans-serif;
+  background-image: url("bg2.jpg");
+}
+
+div,section,main,aside,header,footer{border:1px solid rgb(113, 144, 190);padding:.5em;margin-bottom:1em;
+background-image: url("bg3.jpg");
+}
+
+
+h1{
+    letter-spacing: 6px;
+    text-shadow: red 0 0, cyan 0 0;
+    transition: text-shadow 200ms;
+}
+h1:hover{
+    text-shadow: red -6px 0, cyan 6px 0;
+}
+
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }
+}
+
+a.page1:link {color:#ff0000; background-color: #6BBFBF; font-size: 18px; word-spacing: 10px;}
+a.page1:visited {color:white; background-color: #6BBFBF;}
+a.page1:hover {background:#A6BABA;}
+
+a.page2:link {color:#ff0000; background-color: #6BBFBF; font-size: 18px; word-spacing: 10px;}
+a.page2:visited {color:white; background-color: #6BBFBF;}
+a.page2:hover {background:#A6BABA;}
+
+a.page4:link {color:#ff0000; background-color: #6BBFBF; font-size: 18px; word-spacing: 10px;}
+a.page4:visited {color:white; background-color: #6BBFBF;}
+a.page4:hover {background:#A6BABA;}
+
+a.page5:link {color:#ff0000; background-color: #6BBFBF; font-size: 18px;}
+a.page5:visited {color:white; background-color: #6BBFBF;}
+a.page5:hover {background:#A6BABA;}

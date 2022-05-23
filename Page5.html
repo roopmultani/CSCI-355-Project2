@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Sign up</title>
+    <body>
+  <nav>
+      <a class="page1" href="Page1.html"> Home </a>
+      <a class="page2" href="page2.html"> ORDER </a>
+      <a class="page4" href="Page4.html"> Questions </a>
+      <a class="page3" href="Page3.html"> About </a>
+      <head>
+          <link rel="stylesheet" href="page5Css.css">
+      </head>
+  </nav>
+<style>
+form * {
+  display: block;
+  margin: 10px;
+}
+
+</style>
+<script language="Javascript" >
+function download(filename, text) { //This is how we utilize a script within HTML
+    //This script allows for us to input info and download it straight to the comp via txt file
+  var pom = document.createElement('a');
+  pom.setAttribute('href', 'data:text/plain;charset=utf-8,' +
+
+encodeURIComponent(text));
+  pom.setAttribute('download', filename);
+
+  pom.style.display = 'none';
+  document.body.appendChild(pom);
+
+  pom.click();
+
+  document.body.removeChild(pom);
+}
+</script>
+</head>
+<body>
+<!--Upon clicking submit - Downloads-->
+<form onsubmit="download(this['name'].value, this['text'].value)">
+  <input type="text" name="name" value="EMAIL SIGNUP">
+  <textarea rows=3 cols=50 name="text"> </textarea>
+  <input type="submit" value="Download">
+</form>
+</body>
+</html>

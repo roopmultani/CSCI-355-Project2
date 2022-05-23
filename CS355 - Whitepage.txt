@@ -1,0 +1,29 @@
+﻿For this website, the product was AIR™. There are four three different types of AIR we sell. AIR1, AIR2, AIR3. Each one with a unique and distinct feature.
+
+
+The website developed has a total of five pages. The first page is the main page. This page opens up to show the types of AIR sold, a gallery of AIR options, and a contact section.
+The gallery section includes three hyperlinks that, when clicked, will display an image of the AIR. The contact section has two clickable options. A Twitter page link which if this were a real company would lead to a real Twitter account, and an email tag which is an email of a nonreal email server. 
+        At the top of the home page, there are six different hyperlinks that direct to different pages. These hyperlinks like to an order page, a contact link, which just clicks to move down to the bottom of the homepage, an “about us” page, a questions page, and a sign up for updates page. Each page has distinct features to help allow the user to easily browse our site.
+
+
+The order hyperlink leads to an order form which allows the user to supply information about the user. This includes, name, email, and what type of AIR you would like to purchase. This was challenging because we wanted to ensure that a user couldn’t click the submit button if they didn’t input correct information. Here, if you try to submit, the browser notifies the user that the field was left blank.
+Upon hitting submit, the user is redirected to a prompt. This prompt asks them if they would like to confirm the other. After submitting the order confirmation, the user is once again directed; This time to a credit card authorization form. The authorization form asks the user to supply a correct address, name on card, security code, card number, and expiration date. This was difficult for the same reason that the order form was difficult except here we also wanted to ensure that credit card information would be correct. Between the order and authorization, required a few different functions to ensure the success of order and payment.
+The questions page prompts the user for a name, email, what specific issue this is regarding(via a drop down box), and a text box to type in comments. This question page also contains parameters to prevent the user from leaving out any information.
+The “about us” section was the most fun to do and allowed for more fun design aspects. Firstly, while hovering over the “About AIR” title, the text transitions into a red/blue 3d combination. Below is an animation of our slogan moving up and down. Following this is the copyright.
+The final page was by far the most difficult. This section is the section that allows for data to be moved from the site into a txt file. Upon a user typing in their email address, the user then presses submit and the email address is then imported into a txt file for future use.
+
+
+Utilizing JS and Node, we were able to create a function to set up an HTTP connection. const requestListener = function (req, res) {
+    fs.readFile(__dirname + "/Page1.html")
+        .then(contents => {
+            res.setHeader("Content-Type", "text/html");
+            res.writeHead(200);
+            res.end(contents);
+        })
+        .catch(err => {
+            res.writeHead(500);
+            res.end(err);
+            return;
+        });
+};
+This will allow the HTML to run if the fs reader can find it. 200 is OK. 500 would mean there is some error. Usually that it can’t be found.

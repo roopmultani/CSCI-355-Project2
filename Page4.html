@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Questions</title>
+  <body>
+<nav>
+   <!-- Section links -->
+      <!--Links to all of the page options that can be naviagted through-->
+    <a class="page1" href="Page1.html"> Home </a>
+    <a class="page2"href="page2.html"> ORDER </a>
+    <a class="page3" href="Page3.html"> About </a>
+    <a class="page5" href="Page5.html"> Sign Up For Updates </a>
+    <head>
+        <link rel="stylesheet" href="page4Css.css">
+    </head>
+</nav>
+    <form class="myForm" method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+    <!--This form created a question form for users to ask questions-->
+    <p>
+    <label>Name
+    <input type="text" name="customer_name" required>
+    </label>
+    </p>
+
+    <p>
+    <label>Email
+    <input type="email" name="email_address">
+    </label>
+    </p>
+        <!-- A drop down menu to let the company know what the concern is regarding-->
+    <p>
+    <label>What is this Regarding?
+    <select id="pickup_place" name="pickup_place">
+    <option value="" selected="selected">Select One</option>
+    <option value="Delivery" >Delivery</option>
+    <option value="Faulty Product" >Faulty Product</option>
+    <option value="Other" >Other</option>
+    </select>
+    </label>
+    </p>
+
+    <p>
+    <label>Comments
+    <textarea name="comments" maxlength="500"></textarea>
+    </label>
+    </p>
+
+
+</head>
+    </body>
+    </html>
+    <head>
+        <title>Store form data in .txt file</title>
+      </head>
+      <body>
+        <form method="post">
+
+          <input type="text" name="textdata"><br>
+          <input type="submit" name="submit">
+
+        </form>
+      </body>
